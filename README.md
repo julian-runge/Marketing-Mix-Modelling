@@ -1,2 +1,8 @@
 # Marketing-Mix-Modelling
 Marketing Mix Modelling Capstone Project (Team 4)
+
+The purpose of this report is to showcase the steps and research undertaken to build an MMM model that aids in allocating a certain budget across different marketing channels. Our business problem is to allocate one million dollars across six different marketing channels, namely: Facebook Newsfeed Impressions, YouTube Brand Impressions, Search Clicks, YouTube Performance Impressions, Newspaper Readership, and TV Gross Rating Points. The programming language that was used for validating, transforming, and analyzing the data set is R-Studio, while the open-source package Robyn was used to build and validate the MMM models. The dataset is in the form of a time-series data consisting of 1097 rows and 17 columns. 
+
+We began our analysis by pre-processing, modifying and transforming the data set. Upon doing so, we built our first model - a Linear Regression. This model was not selected to be a part of the analysis due to the presence of multicollinearity, which was detected by calculating the VIF scores. The next step we took was to implement the Robyn package in order to combat the problems we faced from the linear regression model. Robyn provides a semi-automated model selection process by automatically returning a set of optimal results. We began with Prophet Seasonality Analysis in order to study fluctuations in time-series data. After building 11 Pareto Optimal Models, we chose the best model based on the highest R-square and lowest NMRSE.  
+
+Based on the Robyn model, the organization should focus on allocating their budget the most on TV-SPEND and the least on YouTube performance spend.
